@@ -1,0 +1,33 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  padding: 3vh 3vw;
+}
+section.big {
+  background-color: #f8f8f8;
+  border: solid 1px #1d1d1d;
+  border-radius: 15px;
+  padding: 1.5vh 1.5vw;
+  margin: 3vh 3vw;
+}
+
+.resposta {
+  color: #3d3d3d;
+  margin-left: 3vw;
+}
+.tab {
+  margin-left: 6vw;
+}
+.terminal {
+  background-color: #3d3d3d;
+  padding: 1.5vh 1.5vw;
+  border-radius: 5px;
+  border: solid 2px #8d8d8d;
+  color: #d1d1d1;
+}
+a {
+  text-decoration: none;
+  font-weight: bolder;
+}

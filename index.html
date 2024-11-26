@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body>
+    <section class="big">
+      <h1>
+        1.O que é uma publicação web, quais os dois tipos de aplicações
+        existentes e suas principais diferenças
+      </h1>
+      <p class="resposta">
+        E uma Aplicação/Software que funciona na web via um navegador (chrome,
+        fire fox, etc...) sem ter a nescidade de ser instalada
+      </p>
+      <h4 class="resposta">Tipos:</h4>
+      <p class="resposta">
+        Estático: Um site com o conteúdo fixo somente o html css e java script
+      </p>
+      <p class="resposta">
+        Dinâmico: Um site que e gerado dinamicamente pelo servidor que pode ser
+        python, php
+      </p>
+    </section>
+    <section class="big">
+      <h1>2.O que é um domínio e um DNS.</h1>
+      <p class="resposta">
+        Domínio: O nome que compramos para nossa aplicação para ser usado na url
+      </p>
+      <p class="resposta">
+        DNS: Um servidor que e usado como uma lista Telefonica que ao pesquisar
+        o domínio ele nos fala qual o endereço ip da aplicação
+      </p>
+    </section>
+    <section class="big">
+      <h1>
+        3.Explique o que é um servidor compartilhado e um servidor dedicado,
+        evidenciando suas vantagens e desvantagens.
+      </h1>
+      <p class="resposta">
+        Compartilhado: Um servidor usado por varias pessoas
+        <p class="resposta tab">
+            Vantagens: Ele e mais Barato 
+        </p>
+        <p class="resposta tab">
+            Desvantagens: Se um site sobrecarregar ele vai cair todos os outros que estão no mesmo servidor
+        </p>
+      </p>
+      <p class="resposta">
+        Dedicado: Um servidor usado somente para aquela aplicação
+        <p class="resposta tab">
+            Vantagens: vai ser mais forte 
+        </p>
+        <p class="resposta tab">
+            Desvantagens: tem um preço maior
+        </p>
+      </p>
+    </section>
+    <section class="big">
+      <h1>
+        4.O que é um servidor web, explique os dois principais servidores. Como
+        fazer o backup de um projeto de forma compactada. Bem como restaurá-la.
+      </h1>
+      <p class="resposta">Um servidor que vai hospedar um site para ser acessado pela web</p>
+      <p>
+          <strong class="resposta tab">principais Tipos: Apache e o Nginx</strong>
+      </p>
+      <p class="resposta">
+            para compactar um projeto podemos usar o zip 
+            <p class="terminal">
+                zip -r  nome_projeto_backup.zip /caminho/do/projeto
+            </p>
+      </p>
+      <p class="resposta">
+            para descompactar um projeto podemos usar 
+            <p class="terminal">
+                unzip nome_projeto_backup.zip -d
+/caminho/destino/
+            </p>
+      </p>
+    </section>
+    <section class="big">
+        <h1>
+            5.O que é um servidor de banco de dados, explique como fazer o backup e
+            restaurar  esse backup. 
+        </h1>
+            <p class="resposta">Um servidor que vai hospedar um banco de dados para ser acessado por outras aplicação via web</p>
+            <h3 class="resposta">Backup</h3>
+            <p class="resposta">
+                para fazer um backup do banco de dados podemos usar esse comando
+                <p class="terminal">mysqldump -u usuario -p banco_de_dados >
+                backup.sql</p> 
+            </p>
+            <p class="resposta">
+                para compactar o backup podemos usar esse comando
+                <p class="terminal">zip backup_banco.zip backup.sql
+                </p> 
+            </p>
+            <h3 class="resposta">Restaura Backup</h3>
+            <p class="resposta">Descompactar Backup
+                <p class="terminal">unzip backup_banco.zip</p>
+            </p>
+            <p class="resposta">Importar para o banco de dados
+                <p class="terminal">mysql -u usuario -p
+                    banco_de_dados < backup.sql</p>
+            </p>
+        
+    </section>
+    <section class="big">
+      <h1>
+        6.O que é um serviço ssh, e como ele permite acessar um servidor web
+        para transferir arquivos de uma máquina local e o servidor.
+      </h1>
+      <p class="resposta">
+        SSH: E um protocolo usado para fazer login em servidores remotos de uma forma segura
+      </p>
+      <p class="resposta">para a transferência de aquivos podemos usar o scp que usa o ssh para transferir entre maquina local e o servidor </p>
+      <h4 class="resposta">Estrutura básica:</h4>
+      <p class="terminal">scp [opções] [usuário_origem@IP]:/[caminho/arquivo] [usuário_destino@IP]:/[diretório_destino]</p>
+      <h5 class="resposta">Componentes:</h5>
+      <ul class="tab">
+        <li class="resposta">
+            [opções]: Modificadores extras
+        </li>
+        <li class="resposta">
+            [usuário_origem@IP]: Usuário e IP de origem
+        </li>
+        <li class="resposta">
+            :*/ : Indica início do caminho
+        </li>
+        <li class="resposta">
+            [caminho/arquivo]: Local e nome do arquivo
+        </li>
+        <li class="resposta">
+            [usuário_destino@IP]: Usuário e IP de destino
+        </li>
+        <li class="resposta">
+            [diretório_destino]: Local onde o arquivo será salvo
+        </li>
+      </ul>
+      <h5 class="resposta">Exemplo prático:</h5>
+      <p class="terminal">scp root@123.123.123.12:/users/Senac/Desktop/SCP.png root@456.456.456.45:/home/destino/</p>
+    </section>
+    <section class="big">
+      <h1>
+        7.Explique o que é um Linux e cite as principais distribuições usadas
+        como servidor web. 
+      </h1>
+    </section>
+    <section class="big">
+      <h1>8.Explique alguns comando básicos do Linux.</h1>
+    </section>
+    <section class="big">
+        <h1>Fontes</h1>
+        <ul class="tab">
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-pt">DigitalOcean SSH</a>
+            </li>
+            <li>
+                <a href="https://www.hostinger.com.br/tutoriais/usar-comando-scp-linux-para-transferir-arquivos">Hostinger scp</a>
+            </li>
+        </ul>
+        
+    </section>
+  </body>
+</html>
